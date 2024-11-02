@@ -1,0 +1,21 @@
+ui:
+  show_left_ui: false
+  show_right_ui: false
+video:
+  fps: 30
+  height: 1080
+  width: 1920
+viewer:
+  azimuth: 6.25
+  contactforce: true
+  contactpoint: true
+  distance: 1.2001374126166033
+  elevation: -23.125
+  lookat:
+  - 0.6760038133949028
+  - -0.03224633475112279
+  - 0.26823871003224703
+  pertforce: true
+  relefction: false
+  shadow: false
+  track_body: trunk

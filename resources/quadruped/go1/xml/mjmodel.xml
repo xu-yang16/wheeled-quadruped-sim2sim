@@ -1,0 +1,92 @@
+<mujoco model="go1">
+  <compiler angle="radian"/>
+  <statistic meansize="0.157327" extent="0.64803" center="0 0 -0.121985"/>
+  <worldbody>
+    <geom size="0.1881 0.04675 0.057" type="box"/>
+    <geom size="0.0005 0.0005 0.0005" pos="-0.01592 -0.06659 -0.00617" type="box"/>
+    <geom size="0.035 0.01" pos="0.11215 -0.04675 0" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0 0.8 0 1"/>
+    <geom size="0.035 0.01" pos="0.11215 0.04675 0" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0 0.8 0 1"/>
+    <geom size="0.035 0.01" pos="-0.11215 -0.04675 0" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0 0.8 0 1"/>
+    <geom size="0.035 0.01" pos="-0.11215 0.04675 0" quat="0.707107 0 0.707107 0" type="cylinder" rgba="0 0.8 0 1"/>
+    <geom size="0.0005 0.0005 0.0005" pos="0.2785 0.0125 0.0167" quat="0 1 0 0" type="box"/>
+    <geom size="0.0005 0.0005 0.0005" pos="0.2522 0.0125 -0.0436" quat="0 0.707107 0 -0.707107" type="box"/>
+    <geom size="0.0005 0.0005 0.0005" pos="-0.066 0.082 -0.0176" quat="0.0922962 0.701057 0.701057 -0.0922962" type="box"/>
+    <geom size="0.0005 0.0005 0.0005" pos="-0.041 -0.082 -0.0176" quat="-0.0922962 0.701057 -0.701057 -0.0922962" type="box"/>
+    <geom size="0.0005 0.0005 0.0005" pos="-0.0825 0.0125 -0.04365" quat="0 0.707107 0 -0.707107" type="box"/>
+    <geom size="0.0005 0.0005 0.0005" pos="-0.0535 0.0826 0.00868" quat="0.701057 -0.0922962 0.0922962 0.701057" type="box"/>
+    <geom size="0.0005 0.0005 0.0005" pos="-0.0535 -0.0826 0.00868" quat="0.701057 0.0922962 0.0922962 -0.701057" type="box"/>
+    <geom size="0.0005 0.0005 0.0005" pos="0.2747 0 -0.0088" type="box"/>
+    <body name="FR_hip" pos="0.1881 -0.04675 0">
+      <inertial pos="-0.0049166 0.00762615 -8.865e-05" quat="0.507341 0.514169 0.495027 0.482891" mass="0.68" diaginertia="0.000734064 0.000468438 0.000398719"/>
+      <joint name="FR_hip_joint" pos="0 0 0" axis="1 0 0" range="-0.863 0.863" damping="0.01" frictionloss="0.2"/>
+      <geom size="0.046 0.02" pos="0 -0.08 0" quat="0.707107 0.707107 0 0" type="cylinder"/>
+      <geom size="0.035 0.01" pos="0 0.00015 0" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0 0.8 0 1"/>
+      <body name="FR_thigh" pos="0 -0.08 0">
+        <inertial pos="-0.00304722 0.019315 -0.0305004" quat="0.65243 -0.0272313 0.0775126 0.753383" mass="1.009" diaginertia="0.00478717 0.00460903 0.000709268"/>
+        <joint name="FR_thigh_joint" pos="0 0 0" axis="0 1 0" range="-0.686 4.501" damping="0.01" frictionloss="0.2"/>
+        <geom size="0.1065 0.01225 0.017" pos="0 0 -0.1065" quat="0.707107 0 0.707107 0" type="box"/>
+        <geom size="0.035 0.01" pos="0 0.03235 0" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0 0.8 0 1"/>
+        <body name="FR_calf" pos="0 0 -0.213">
+          <inertial pos="0.00429862 0.000976676 -0.146197" quat="0.691246 0.00357467 0.00511118 0.722592" mass="0.195862" diaginertia="0.00149767 0.00148468 3.58427e-05"/>
+          <joint name="FR_calf_joint" pos="0 0 0" axis="0 1 0" range="-2.818 -0.888" damping="0.01" frictionloss="0.2"/>
+          <geom size="0.1065 0.008 0.008" pos="0 0 -0.1065" quat="0.707107 0 0.707107 0" type="box"/>
+          <geom size="0.02" pos="0 0 -0.213"/>
+        </body>
+      </body>
+    </body>
+    <body name="FL_hip" pos="0.1881 0.04675 0">
+      <inertial pos="-0.0049166 -0.00762615 -8.865e-05" quat="0.482891 0.495027 0.514169 0.507341" mass="0.68" diaginertia="0.000734064 0.000468438 0.000398719"/>
+      <joint name="FL_hip_joint" pos="0 0 0" axis="1 0 0" range="-0.863 0.863" damping="0.01" frictionloss="0.2"/>
+      <geom size="0.046 0.02" pos="0 0.08 0" quat="0.707107 0.707107 0 0" type="cylinder"/>
+      <geom size="0.035 0.01" pos="0 -0.00015 0" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0 0.8 0 1"/>
+      <body name="FL_thigh" pos="0 0.08 0">
+        <inertial pos="-0.00304722 -0.019315 -0.0305004" quat="0.753383 0.0775126 -0.0272313 0.65243" mass="1.009" diaginertia="0.00478717 0.00460903 0.000709268"/>
+        <joint name="FL_thigh_joint" pos="0 0 0" axis="0 1 0" range="-0.686 4.501" damping="0.01" frictionloss="0.2"/>
+        <geom size="0.1065 0.01225 0.017" pos="0 0 -0.1065" quat="0.707107 0 0.707107 0" type="box"/>
+        <geom size="0.035 0.01" pos="0 -0.03235 0" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0 0.8 0 1"/>
+        <body name="FL_calf" pos="0 0 -0.213">
+          <inertial pos="0.00429862 0.000976676 -0.146197" quat="0.691246 0.00357467 0.00511118 0.722592" mass="0.195862" diaginertia="0.00149767 0.00148468 3.58427e-05"/>
+          <joint name="FL_calf_joint" pos="0 0 0" axis="0 1 0" range="-2.818 -0.888" damping="0.01" frictionloss="0.2"/>
+          <geom size="0.1065 0.008 0.008" pos="0 0 -0.1065" quat="0.707107 0 0.707107 0" type="box"/>
+          <geom size="0.02" pos="0 0 -0.213"/>
+        </body>
+      </body>
+    </body>
+    <body name="RR_hip" pos="-0.1881 -0.04675 0">
+      <inertial pos="0.0049166 0.00762615 -8.865e-05" quat="0.495027 0.482891 0.507341 0.514169" mass="0.68" diaginertia="0.000734064 0.000468438 0.000398719"/>
+      <joint name="RR_hip_joint" pos="0 0 0" axis="1 0 0" range="-0.863 0.863" damping="0.01" frictionloss="0.2"/>
+      <geom size="0.046 0.02" pos="0 -0.08 0" quat="0.707107 0.707107 0 0" type="cylinder"/>
+      <geom size="0.035 0.01" pos="0 0.00015 0" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0 0.8 0 1"/>
+      <body name="RR_thigh" pos="0 -0.08 0">
+        <inertial pos="-0.00304722 0.019315 -0.0305004" quat="0.65243 -0.0272313 0.0775126 0.753383" mass="1.009" diaginertia="0.00478717 0.00460903 0.000709268"/>
+        <joint name="RR_thigh_joint" pos="0 0 0" axis="0 1 0" range="-0.686 4.501" damping="0.01" frictionloss="0.2"/>
+        <geom size="0.1065 0.01225 0.017" pos="0 0 -0.1065" quat="0.707107 0 0.707107 0" type="box"/>
+        <geom size="0.035 0.01" pos="0 0.03235 0" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0 0.8 0 1"/>
+        <body name="RR_calf" pos="0 0 -0.213">
+          <inertial pos="0.00429862 0.000976676 -0.146197" quat="0.691246 0.00357467 0.00511118 0.722592" mass="0.195862" diaginertia="0.00149767 0.00148468 3.58427e-05"/>
+          <joint name="RR_calf_joint" pos="0 0 0" axis="0 1 0" range="-2.818 -0.888" damping="0.01" frictionloss="0.2"/>
+          <geom size="0.1065 0.008 0.008" pos="0 0 -0.1065" quat="0.707107 0 0.707107 0" type="box"/>
+          <geom size="0.02" pos="0 0 -0.213"/>
+        </body>
+      </body>
+    </body>
+    <body name="RL_hip" pos="-0.1881 0.04675 0">
+      <inertial pos="0.0049166 -0.00762615 -8.865e-05" quat="0.514169 0.507341 0.482891 0.495027" mass="0.68" diaginertia="0.000734064 0.000468438 0.000398719"/>
+      <joint name="RL_hip_joint" pos="0 0 0" axis="1 0 0" range="-0.863 0.863" damping="0.01" frictionloss="0.2"/>
+      <geom size="0.046 0.02" pos="0 0.08 0" quat="0.707107 0.707107 0 0" type="cylinder"/>
+      <geom size="0.035 0.01" pos="0 -0.00015 0" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0 0.8 0 1"/>
+      <body name="RL_thigh" pos="0 0.08 0">
+        <inertial pos="-0.00304722 -0.019315 -0.0305004" quat="0.753383 0.0775126 -0.0272313 0.65243" mass="1.009" diaginertia="0.00478717 0.00460903 0.000709268"/>
+        <joint name="RL_thigh_joint" pos="0 0 0" axis="0 1 0" range="-0.686 4.501" damping="0.01" frictionloss="0.2"/>
+        <geom size="0.1065 0.01225 0.017" pos="0 0 -0.1065" quat="0.707107 0 0.707107 0" type="box"/>
+        <geom size="0.035 0.01" pos="0 -0.03235 0" quat="0.707107 0.707107 0 0" type="cylinder" rgba="0 0.8 0 1"/>
+        <body name="RL_calf" pos="0 0 -0.213">
+          <inertial pos="0.00429862 0.000976676 -0.146197" quat="0.691246 0.00357467 0.00511118 0.722592" mass="0.195862" diaginertia="0.00149767 0.00148468 3.58427e-05"/>
+          <joint name="RL_calf_joint" pos="0 0 0" axis="0 1 0" range="-2.818 -0.888" damping="0.01" frictionloss="0.2"/>
+          <geom size="0.1065 0.008 0.008" pos="0 0 -0.1065" quat="0.707107 0 0.707107 0" type="box"/>
+          <geom size="0.02" pos="0 0 -0.213"/>
+        </body>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>

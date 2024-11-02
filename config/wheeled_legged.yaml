@@ -1,0 +1,4 @@
+model_xml: resources/wheeled_go1/xml/scene_terrain.xml
+sim_dt: 0.002
+control_dt: 0.01
+use_plot: None

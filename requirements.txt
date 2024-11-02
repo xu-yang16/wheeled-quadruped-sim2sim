@@ -1,0 +1,9 @@
+torch
+mujoco
+scipy
+numpy==1.24
+loguru
+pyyaml
+matplotlib
+opencv-python
+rerun
